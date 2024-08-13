@@ -4,7 +4,7 @@ import pandas as pd
 #st.set_page_config(layout="wide")
 
 st.title('Machine Learning Application')
-st.info('This application builds a Machine learning model!')
+st.info('This application builds a Machine learning model !')
 st.write('By: Karan Raj Sharma')
 st.write('--------')
 
@@ -22,6 +22,7 @@ with st.expander('Data'):
   y
 
 with st.expander('Data Visualisation'):
-  # "bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   st.scatter_chart(data = df, x = 'bill_depth_mm', y = 'bill_length_mm', color='species')
+
+
 
