@@ -1,4 +1,4 @@
-Machine Learning App #1 
+## Machine Learning App #1 
 
 This is my first ML application created using Streamlit
 
