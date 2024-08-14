@@ -15,8 +15,8 @@ with st.expander('Data'):
   df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
  
   st.write('**X**')
-  X= df.drop('species',axis = 1)
-  X
+  X_raw= df.drop('species',axis = 1)
+  X_raw
 
   st.write('**y**')
   y_raw= df.species
@@ -53,9 +53,12 @@ with st.expander('Input features'):
   input_penguins
   
 #Data Prepration  
+
 #Encode Categorical Variables (X)
 encode = ['island','sex']
 df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+
+X= df_penguin[1:]
 input_row = df_penguins[:1]
 
 #Encode y 
@@ -67,9 +70,22 @@ def target_encode(val):
 
 y = y_raw.apply(target_encode)
 
-with st.expander('Data Prepration'):
+with st.expander('Data prepration'):
   st.write('**Encoded input penguin (X)**')
   input_row
   st.write('**Encoded y**')
   y
+
+# Machine Learning Model Training and inference
+#Train the model
+clf = RandomForestClassifier()
+clf.fit(X,y)
+
+#Apply model to make prediction
+prediction = clf.predict(input_row)
+prediction_proba = clf.predict_prob(input_row)
+
+prediction_proba
+
+
 
