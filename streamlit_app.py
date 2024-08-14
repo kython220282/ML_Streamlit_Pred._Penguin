@@ -7,7 +7,7 @@ st.title('ML App.: Predict Penguin Species')
 st.info('This application predicts Penguin species based on the input features selected by the user in the sidebar!')
 st.write('By: Karan Raj Sharma')
 st.write('--------')
-st.warning('')
+st.warning('Please enter your inputs in the sidebar. Expand sidebar to view input fields')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
