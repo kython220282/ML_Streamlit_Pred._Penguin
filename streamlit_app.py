@@ -3,7 +3,7 @@ import pandas as pd
 
 #st.set_page_config(layout="wide")
 
-st.title('ML Application: Predict Penguin Species')
+st.title('ML app.: Predict Penguin Species')
 st.info('This application predicts Penguin species based on the input features selected by the user in the sidebar!')
 st.write('By: Karan Raj Sharma')
 st.write('--------')
