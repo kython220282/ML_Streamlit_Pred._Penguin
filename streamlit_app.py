@@ -9,16 +9,17 @@ st.write('By: Karan Raj Sharma')
 st.write('--------')
 
 with st.expander('Data'):
-  st.write('**Raw Data**')
-  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
-  df
+  st.write('**Raw Data**')  st.write('**Raw Data**')
 
+  df = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/data/master/penguins_cleaned.csv')
+ 
   st.write('**X**')
   X= df.drop('species',axis = 1)
   X
 
   st.write('**y**')
   y= df.species
+  y
   y
 
 with st.expander('Data Visualisation'):
@@ -36,11 +37,13 @@ with st.sidebar:
   sex = st.selectbox('gender',('male','female'))
   
   # Create a DataFrame for the input features
-  data = ('island': island,
+  data = {'island': island,
           'bill_length_mm': bill_length_mm,
           'bill_depth_mm': bill_depth_mm,
           'flipper_length_mm': flipper_length_mm,
           'body_mass_g': body_mass_g,
-          'sex': sex)
-          ''
+          'sex': sex}
+  input_df = pd.DataFrame(data,index[0])
+  input_penguins = pd.concat([input_df,X],axis=0)
+  
   
