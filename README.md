@@ -1,7 +1,8 @@
 ## Machine Learning App #1: Penguin dataset
 
-This is my first ML application created using Streamlit, app takes user inputs and predicts Penguin type
+ML application created using Streamlit, app takes user inputs and predicts Penguin type
+Algorithm Used - Random Forest
 
-## Demo App
+## Application link
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://krs-ml-app1.streamlit.app/))
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://krs-ml-app1.streamlit.app/)
