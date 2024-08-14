@@ -7,6 +7,7 @@ st.title('ML App.: Predict Penguin Species')
 st.info('This application predicts Penguin species based on the input features selected by the user in the sidebar!')
 st.write('By: Karan Raj Sharma')
 st.write('--------')
+st.warning('')
 
 with st.expander('Data'):
   st.write('**Raw Data**')
@@ -53,6 +54,8 @@ with st.expander('Input features'):
   input_penguins
   
 #Encode Categorical Variables
-encode = ['island','sex']
-df_penguins = pd.get_dummies(input_penguins, prefix=encode)
-df_penguins
+with st.expander('Encoding'):
+  st.write('**Encoded Categorical Features**')
+  encode = ['island','sex']
+  df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+  df_penguins
