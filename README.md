@@ -1,20 +1,7 @@
-## Machine Learning App #1 
+## Machine Learning App #1: Penguin dataset
 
-This is my first ML application created using Streamlit
+This is my first ML application created using Streamlit, app takes user inputs and predicts Penguin type
 
 ## Demo App
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://krs-machinelearningapp1.streamlit.app/)
-
-## GitHub Codespaces
-
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/app-starter-kit?quickstart=1)
-
-## Section Heading
-
-This is filler text, please replace this with text for this section.
-
-## Further Reading
-
-- https://krs-ml-app1.streamlit.app/
-- https://www.youtube.com/watch?v=LJ6DcLGQ4vY&t=1837s
