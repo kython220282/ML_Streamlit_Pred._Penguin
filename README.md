@@ -1,7 +1,6 @@
 ## Machine Learning App #1: Penguin dataset
 
-ML application created using Streamlit, app takes user inputs and predicts Penguin type
-Algorithm Used - Random Forest
+ML application created using Streamlit, app takes user inputs and predicts Penguin type. Algorithm Used - **Random Forest**
 
 ## Application link
 
