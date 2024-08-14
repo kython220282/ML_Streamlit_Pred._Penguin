@@ -27,6 +27,7 @@ with st.expander('Data Visualisation'):
 
 # Data Prepration
 with st.sidebar:
+  st.header('Select Features')
   #island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   island = st.selectbox('Island',('Biscoe','Dream','Torgersen'))
   sex = st.selectbox('gender',('male','female'))
