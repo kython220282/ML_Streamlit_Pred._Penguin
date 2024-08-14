@@ -26,7 +26,7 @@ with st.expander('Data Visualisation'):
   st.scatter_chart(data = df, x = 'bill_depth_mm', y = 'bill_length_mm', color='island')
 
 # Data Prepration
-with st.slider:
+with st.sidebar:
   #island","bill_length_mm","bill_depth_mm","flipper_length_mm","body_mass_g","sex"
   island = st.selectbox('Island',('Biscoe','Dream','Torgersen'))
   sex = st.selectbox('gender',('male','female'))
