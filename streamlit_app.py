@@ -47,16 +47,27 @@ with st.sidebar:
   input_df = pd.DataFrame(data,index=[0])
   input_penguins = pd.concat([input_df,X],axis=0)
   
-#Encode Categorical Variables
-  st.write('**Encoded Categorical Features**')
-  encode = ['island','sex']
-  df_penguins = pd.get_dummies(input_penguins, prefix=encode)
-  input_row = df_penguins[:1]
+ #Encode Categorical Variables
+st.write('**Encoded Categorical Features**')
+encode = ['island','sex']
+df_penguins = pd.get_dummies(input_penguins, prefix=encode)
+input_row = df_penguins[:1]
+
+#Encode y 
+target_mapper = {'Adelie':0,
+                 'Chinstrap':1,
+                 'Gentoo':2}
+def target_encode(val):
+  return target_mapper[val]
+
+y = y_raw.apply(target_encode)
+y
+
 
 with st.expander('Input features'):
   st.write('**Input penguin**')
   input_df
-  st.write('**Combined Penguins data**')
+  st.write('**Combined penguins data**')
   input_penguins
   st.write('**Encoded input penguin**')
   input_row
