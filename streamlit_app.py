@@ -19,9 +19,8 @@ with st.expander('Data'):
   X
 
   st.write('**y**')
-  y= df.species
-  y
-  y
+  y_raw= df.species
+  y_raw
 
 with st.expander('Data Visualisation'):
   st.scatter_chart(data = df, x = 'bill_depth_mm', y = 'bill_length_mm', color='species')
