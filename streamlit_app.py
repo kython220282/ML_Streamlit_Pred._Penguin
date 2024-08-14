@@ -3,8 +3,8 @@ import pandas as pd
 
 #st.set_page_config(layout="wide")
 
-st.title('Machine Learning Application')
-st.info('This application builds a Machine learning model !')
+st.title('ML Application: Predict Penguin Species')
+st.info('This application predicts Penguin species based on the input features selected by the user in the sidebar!')
 st.write('By: Karan Raj Sharma')
 st.write('--------')
 
@@ -28,7 +28,7 @@ with st.expander('Data Visualisation'):
 
 # Data Prepration
 with st.sidebar:
-  st.header('Select Features')
+  st.header('Input Features')
   island = st.selectbox('Island',('Biscoe','Dream','Torgersen'))
   bill_length_mm = st.slider('Bill length (mm)', 32.1, 59.6, 43.9)
   bill_depth_mm = st.slider('Bill depth (mm)',13.1,21.50,17.2)
